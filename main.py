@@ -39,7 +39,7 @@ class TestUrbanRoutes:
         routes_page.click_taxi_option()
         routes_page.click_comfort_icon()
         assert routes_page.click_comfort_active()
-        time.sleep(5)
+
 
 
     def test_fill_phone_number (self):
@@ -50,7 +50,7 @@ class TestUrbanRoutes:
         routes_page.click_comfort_icon()
         routes_page.click_number_text(data.PHONE_NUMBER)
         assert data.PHONE_NUMBER in routes_page.numero_confirmado()
-        time.sleep(10)
+
 
     def test_fill_card(self):
         self.driver.get(data.URBAN_ROUTES_URL)
